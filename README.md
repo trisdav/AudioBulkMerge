@@ -4,20 +4,20 @@ This is a project to merge several audio files into a single file, while simulta
 # Using
 ## Setting up Audacity
 * First, go into Audacity preferences and enable mod-script-pipe, as shown in the image below.
-!(https://github.com/trisdav/AudioBulkMerge/tree/initial/documentation/audacity-settings.PNG)
+![setup-audacity](https://github.com/trisdav/AudioBulkMerge/tree/initial/documentation/audacity-settings.PNG)
 * Restart Audacity for the change to take effect.
 ## Running the script
 * Run the main_interface.py script
 '''bash
 python3 main_interface.py
 '''
-!(https://github.com/trisdav/AudioBulkMerge/tree/initial/documentation/empty-project.PNG)
+![empty-project](https://github.com/trisdav/AudioBulkMerge/tree/initial/documentation/empty-project.PNG)
 * Next select an input folder, that is a folder which contains the audio files to be merged.
-!(documentation/select-input-folder.png)
+![select-input-folder](https://github.com/trisdav/AudioBulkMerge/tree/documentation/select-input-folder.png)
 * Then press the "New Operation" button to add an effect to a audio file.
-!(https://github.com/trisdav/AudioBulkMerge/tree/initial/documentation/operations-added.PNG)
+![operations-added](https://github.com/trisdav/AudioBulkMerge/tree/initial/documentation/operations-added.PNG)
 * When an operation is chosen the row will expand with the parameters for that operation, as shown below.
-!(https://github.com/trisdav/AudioBulkMerge/tree/initial/documentation/operations-set.PNG)
+![operations-set](https://github.com/trisdav/AudioBulkMerge/tree/initial/documentation/operations-set.PNG)
 * Export As will ask what to export the new audio file as, then perform all operations and merge all files.
 * Save Config can be used to save a set of operations for later use.
 * Once a config is loaded the Input Folder can be changed, but each operation row will need the Select File field to be reset.

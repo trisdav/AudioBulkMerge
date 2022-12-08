@@ -4,14 +4,15 @@ This is a project to merge several audio files into a single file, while simulta
 # Using
 ## Setting up Audacity
 * First, go into Audacity preferences and enable mod-script-pipe, as shown in the image below.
-![setup-audacity](https://github.com/trisdav/AudioBulkMerge/tree/initial/documentation/audacity-settings.PNG)
+![setup-audacity](https://github.com/trisdav/AudioBulkMerge/blob/initial/documentation/audacity-settings.PNG)
 * Restart Audacity for the change to take effect.
 ## Running the script
 * Run the main_interface.py script
-'''bash
+```bash
 python3 main_interface.py
-'''
-![empty-project](https://github.com/trisdav/AudioBulkMerge/tree/initial/documentation/empty-project.PNG)
+```
+
+[empty-project](https://github.com/trisdav/AudioBulkMerge/blob/initial/documentation/empty-project.PNG)
 * Next select an input folder, that is a folder which contains the audio files to be merged.
 ![select-input-folder](https://github.com/trisdav/AudioBulkMerge/tree/documentation/select-input-folder.png)
 * Then press the "New Operation" button to add an effect to a audio file.

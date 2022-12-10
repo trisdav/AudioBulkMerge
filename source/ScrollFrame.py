@@ -1,3 +1,4 @@
+# For reference, this came from here: https://gist.github.com/mp035/9f2027c3ef9172264532fcd6262f3b01
 """
 This program is free software: you can redistribute it and/or modify it under the terms of the 
 GNU General Public License as published by the Free Software Foundation, either version 3 of the 

@@ -73,14 +73,14 @@ class merge:
                 audio_files.append(a_file)
         return audio_files
 
-    def process_merge(self, request, export, numCh=2):
+    def process_merge(self, request, export, numCh=1):
         """ Request is a dictionary. This is done to de-couple this from the GUI.
         This leaves open the possibility of bypassing the GUI entirely, which will
         be quicker if the user has a predefined operation they want to perform.
         Potentially even making a shortcut to perform the operation with a simple
         double-click.
 
-        I default to stereo because the user can squash it to mono if they want...
+        Default to mono because there was time distortion when the input was mono.
         """
         # Get a list of audio files.
         files_to_merge = self.get_sound_files(request["working_dir"])

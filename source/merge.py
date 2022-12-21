@@ -69,7 +69,7 @@ class merge:
         # Filter out files that aren't audio files.
         for a_file in all_files:
             # Need to update to support more than just mp3
-            if a_file.endswith(('.mp3')):
+            if a_file.endswith(('.mp3', '.wav', '.aiff', '.au', '.ogg')):
                 audio_files.append(a_file)
         return audio_files
 

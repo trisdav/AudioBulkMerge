@@ -87,7 +87,7 @@ class merge:
         # Load them into audacity
         for a_file in files_to_merge:
             # Import2: https://forum.audacityteam.org/viewtopic.php?t=108538
-            self.do_command("Import2: Filename=" + request["working_dir"] + "/" + a_file)
+            self.do_command("Import2: Filename=\"" + request["working_dir"] + "/" + a_file + "\"")
         
         operation_list = request["merge_ops"]
         for op_id in operation_list:
@@ -108,7 +108,7 @@ class merge:
         # Now merge the tracks
         self.do_command("MixAndRender: ")
         # Now save as the export option
-        self.do_command("Export2: Filename=" + export + " NumChannels=" + str(numCh))
+        self.do_command("Export2: Filename=\"" + export + "\" NumChannels=" + str(numCh))
 
 if __name__ == "__main__":
     # This is intended for testing purposes.

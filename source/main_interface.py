@@ -131,10 +131,13 @@ class Application(tk.Frame):
         # Make sure save file selection succeeded before doing anything.
         if save_file:
             save = self.get_save_obj()
-            save_file.write(json.dumps(save))
+            json_string = json.dumps(save)
+            # Useful information. Once this is stable this should be removed.
+            print(json_string) 
+            save_file.write(json_string)
             save_file.close()
         else:
-            messagebox.showingo("Error", "Cancelled")
+            messagebox.showinfo("Error", "Cancelled")
 
     def load(self):
         """ Load a save file. """
@@ -154,7 +157,6 @@ class Application(tk.Frame):
             # Get the merge operations
             saved_ops = saved["merge_ops"]
             for op_id in saved_ops:
-                print(saved_ops[op_id])
                 self.merge_ops.load(saved_ops[op_id])
             
 

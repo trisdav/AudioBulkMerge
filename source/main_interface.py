@@ -97,7 +97,7 @@ class Application(tk.Frame):
 
 
     def select_output(self):
-        fout = tkinter.filedialog.asksaveasfile(mode='w', defaultextension='.mp3')
+        fout = tkinter.filedialog.asksaveasfile(mode='w', defaultextension='.mp3', filetypes=[("mp3", "*.mp3")])
         fout_name = fout.name
         fout.close()
         self.menubar.output_path["text"] = fout_name
@@ -126,7 +126,7 @@ class Application(tk.Frame):
 
     def save(self):
         """ Save the status of the application so that it can be restored later. """
-        save_file = tkinter.filedialog.asksaveasfile(mode='w', defaultextension='.json')
+        save_file = tkinter.filedialog.asksaveasfile(mode='w', defaultextension='.json', filetypes=[("json files", "*.json")])
 
         # Make sure save file selection succeeded before doing anything.
         if save_file:
